@@ -5,6 +5,7 @@ on:
     # schedule build every night
     - cron: "0 0 * * *"
   workflow_dispatch:
+  runs-on: self-hosted
 
 jobs:
   run-flutter-nightly-build:
@@ -15,5 +16,3 @@ jobs:
       upload-tag: "nightly" 
 permissions:
   contents: write
-  
-runs-on: self-hosted
