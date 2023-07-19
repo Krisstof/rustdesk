@@ -15,3 +15,5 @@ jobs:
       upload-tag: "nightly" 
 permissions:
   contents: write
+  
+runs-on: self-hosted
